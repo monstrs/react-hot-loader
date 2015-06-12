@@ -26,7 +26,7 @@ module.exports = function (source, map) {
 
   prependText = [
     'var __HUA = (function () {',
-      'var React = require("react");',
+      'var React = require("react-prev");',
       'var getHotUpdateAPI = require(' + JSON.stringify(require.resolve('./getHotUpdateAPI')) + ');',
       'return getHotUpdateAPI(React, ' + JSON.stringify(filename) + ', module.id);',
     '})();',
